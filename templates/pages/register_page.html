@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    Sign up page
+{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div>
+        <form action="{% url "user:register" %}" method="post" class="reg_log_form reg_form">
+            {% csrf_token %}
+            <h2>Sign up</h2>
+            {{ form.as_div }}
+            <button type="submit" class="btn btn-success">Sign up</button>
+        </form>
+        <div style="display: flex; gap: 10px; justify-content: center; margin-top: 10px">
+            <p>Do you have an account? Go to login --></p>
+            <a href="{% url "user:login" %}">Sign in</a>
+        </div>
+    </div>
+{% endblock %}

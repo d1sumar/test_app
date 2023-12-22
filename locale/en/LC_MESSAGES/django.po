@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-13 19:32+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\config\settings.py:126
+msgid "English"
+msgstr ""
+
+#: .\config\settings.py:127
+msgid "Русский"
+msgstr ""
+
+#: .\config\settings.py:128
+msgid "O'zbekcha"
+msgstr ""
+
+#: .\monitoring\models.py:52
+msgid "Bajarilgan vaqt"
+msgstr "Done time"
+
+#: .\templates\components\navbar.html:9
+msgid "Home"
+msgstr ""
+
+#: .\templates\components\navbar.html:14
+msgid "Subjects"
+msgstr ""
+
+#: .\templates\components\navbar.html:58
+msgid "Profile"
+msgstr ""
+
+#: .\templates\components\navbar.html:61
+msgid ""
+"Log\n"
+"                                    out"
+msgstr ""
+
+#: .\templates\components\navbar.html:64
+msgid ""
+"Sign\n"
+"                                    in"
+msgstr ""
+
+#: .\templates\components\navbar.html:66
+msgid ""
+"Sign\n"
+"                                    up"
+msgstr ""
+
+#: .\templates\pages\delete_profile.html:10
+msgid " - are you sure?"
+msgstr ""
+
+#: .\templates\pages\delete_profile.html:13 .\templates\pages\profile.html:22
+msgid "Delete"
+msgstr ""
+
+#: .\templates\pages\edit_profile.html:13
+msgid "Save"
+msgstr ""
+
+#: .\templates\pages\exercise_page.html:43
+msgid "Tekshirish"
+msgstr "Check"
+
+#: .\templates\pages\exercise_page.html:46
+msgid "Register to take the test"
+msgstr ""
+
+#: .\templates\pages\home_page.html:11
+msgid "Hi"
+msgstr ""
+
+#: .\templates\pages\profile.html:18
+msgid "Rezultatlar"
+msgstr "Results"
+
+#: .\templates\pages\profile.html:21
+msgid "Edit"
+msgstr ""
+
+#: .\templates\pages\result_page.html:11
+msgid "Natijangiz"
+msgstr "Your result"
+
+#: .\templates\pages\subjects_page.html:11
+msgid "FANLAR"
+msgstr "SUBJECTS"
+
+#: .\templates\pages\variant_page.html:11
+msgid "VARIANTLAR"
+msgstr "VARIANTS"
+
+#: .\user\forms.py:24
+msgid "Bunday foydalanuvchi nomiga ega foydalanuvchi allaqachon mavjud."
+msgstr "A user with this username already exists."

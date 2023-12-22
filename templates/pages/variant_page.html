@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+
+{% block title %}
+    VARIANTLAR
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>{% blocktrans %}VARIANTLAR{% endblocktrans %}</h1>
+        <div class="list-group">
+            {% for variant in variant_list %}
+                {% if request.user.is_staff %}
+                    {% if request.user.is_staff == 1 %}
+                        <div class="list-group-item list-group-item-action" style="display: flex; justify-content: space-between;">
+                            <a href="{% url 'monitoring:variants' variant.id %}">{{ variant.title }}</a>
+                            <div style="display: flex; align-items: center;">
+                                <a href="{% url 'monitoring:variant_create' %}?subject={{ subject.id|urlencode }}">Qo'shish</a>
+                            </div>
+                        </div>
+                    {% endif %}
+                    {#                        <a href="{% url 'monitoring:variant_edit' variant.id %}" class="ms-auto">O'zgartirish</a>#}
+                    {#                        <a href="{% url 'monitoring:variant_delete' variant.id %}" class="ms-4">O'chirish</a>#}
+
+                {% else %}
+                    <div class="list-group-item list-group-item-action">
+                        <a class="btn" href="{% url 'monitoring:variants' variant.id %}">{{ variant.title }}</a>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

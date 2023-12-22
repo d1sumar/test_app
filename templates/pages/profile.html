@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}
+    Profile page
+{% endblock %}
+
+{% block content %}
+    <div class="container" style="margin-top: 50px;">
+        <div class="avatar-wrap">
+            <img src="{{ user.avatar.url }}" alt=""
+                 style="object-fit: cover; object-position: center; width: 250px; height: 250px; border-radius: 10px">
+        </div>
+        <div style="display: flex; width: 250px; justify-content: space-between; margin-top: 25px;">
+            <a class="btn btn-outline-warning" href="{% url "user:edit_profile" object.pk %}">{% blocktrans %}
+                Edit{% endblocktrans %}</a>
+            <a class="btn btn-outline-danger" href="{% url "user:delete_profile" object.pk %}">{% blocktrans %}
+                Delete{% endblocktrans %}</a>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; width: 250px; margin-top: 50px;">
+            <h5>{{ user.username }}</h5>
+            <h5>{{ user.first_name }}</h5>
+            <h5>{{ user.last_name }}</h5>
+            <h5>{{ user.email }}</h5>
+            <a class="btn btn-outline-primary" href="{% url "monitoring:result_list" %}"
+               style=" width: 250px; margin-top: 25px;">{% blocktrans %}Rezultatlar{% endblocktrans %}</a>
+        </div>
+    </div>
+{% endblock %}

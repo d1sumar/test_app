@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}
+    Fanlar
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>{% blocktrans %}FANLAR{% endblocktrans %}</h1>
+        {% for subject in subject_list %}
+            <ul style="list-style: none">
+                <li>
+                    <a href="{% url 'monitoring:subjects' subject.id %}">{{ subject.name }}</a>
+                </li>
+            </ul>
+        {% endfor %}
+    </div>
+{% endblock %}

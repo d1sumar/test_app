@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}
+    Variant: {{ variant.title }}
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h2>{{ variant.title }}</h2>
+        <form method="post">
+            {% csrf_token %}
+            <ol>
+                {% for exercise in exercise_list %}
+                    <li>
+                        <h6>{{ exercise.text }}</h6>
+                        <p>
+                            <input type="radio" name="{{ exercise.id }}" id="{{ exercise.id }}_answer_a"
+                                   value="answer_a">
+                            <label for="{{ exercise.id }}_answer_a">{{ exercise.answer_a }}</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="{{ exercise.id }}" id="{{ exercise.id }}_answer_b"
+                                   value="answer_b">
+                            <label for="{{ exercise.id }}_answer_b">{{ exercise.answer_b }}</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="{{ exercise.id }}" id="{{ exercise.id }}_answer_c"
+                                   value="answer_c">
+                            <label for="{{ exercise.id }}_answer_c">{{ exercise.answer_c }}</label>
+                        </p
+                        >
+                        <p>
+                            <input type="radio" name="{{ exercise.id }}" id="{{ exercise.id }}_answer_d"
+                                   value="answer_d">
+                            <label for="{{ exercise.id }}_answer_d">{{ exercise.answer_d }}</label>
+                        </p>
+                    </li>
+                {% endfor %}
+            </ol>
+            {% if request.user.is_authenticated == True %}
+                <button type="submit">{% blocktrans %}Tekshirish{% endblocktrans %}</button>
+            {% endif %}
+            {% if request.user.is_authenticated == False %}
+                <a href="{% url "user:register" %}">{% blocktrans %}Register to take the test{% endblocktrans %}</a>
+            {% endif %}
+        </form>
+
+    </div>
+{% endblock %}

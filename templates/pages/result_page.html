@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}
+    Result
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h3>{% blocktrans %}Natijangiz{% endblocktrans %}: {{ ball }} / {{ count }}</h3>
+
+        <ol>
+            {% for result in object_list %}
+                <li>
+                    <h6>{{ result.exercise.text }}</h6>
+
+                    <p>
+                        A) {{ result.exercise.answer_a }}
+                        <span style="color: {% if result.user_answer == 'answer_a' %}
+                            {% if result.exercise.answer == 'answer_a' %} green {% else %} red {% endif %}
+                        {% endif %}">
+                            {% if result.user_answer == 'answer_a' %}
+                                {% if result.exercise.answer == 'answer_a' %}✓{% else %}✕{% endif %}
+                            {% endif %}
+                        </span>
+                    </p>
+
+                    <p>
+                        B) {{ result.exercise.answer_b }}
+                        <span style="color: {% if result.user_answer == 'answer_b' %}
+                            {% if result.exercise.answer == 'answer_b' %} green {% else %} red {% endif %}
+                        {% endif %}">
+                            {% if result.user_answer == 'answer_b' %}
+                                {% if result.exercise.answer == 'answer_b' %}✓{% else %}✕{% endif %}
+                            {% endif %}
+                        </span>
+                    </p>
+
+                    <p>
+                        C) {{ result.exercise.answer_c }}
+                        <span style="color: {% if result.user_answer == 'answer_c' %}
+                            {% if result.exercise.answer == 'answer_c' %} green {% else %} red {% endif %}
+                        {% endif %}">
+                            {% if result.user_answer == 'answer_c' %}
+                                {% if result.exercise.answer == 'answer_c' %}✓{% else %}✕{% endif %}
+                            {% endif %}
+                        </span>
+                    </p>
+
+                    <p>
+                        D) {{ result.exercise.answer_d }}
+                        <span style="color: {% if result.user_answer == 'answer_d' %}
+                            {% if result.exercise.answer == 'answer_d' %} green {% else %} red {% endif %}
+                        {% endif %}">
+                            {% if result.user_answer == 'answer_d' %}
+                                {% if result.exercise.answer == 'answer_d' %}✓{% else %}✕{% endif %}
+                            {% endif %}
+                        </span>
+                    </p>
+
+                </li>
+            {% endfor %}
+        </ol>
+
+        <a href="{% url 'monitoring:result_list' %}">Страница результатов</a>
+    </div>
+{% endblock %}

@@ -1,0 +1,116 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-13 19:32+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\config\settings.py:126
+msgid "English"
+msgstr ""
+
+#: .\config\settings.py:127
+msgid "Русский"
+msgstr ""
+
+#: .\config\settings.py:128
+msgid "O'zbekcha"
+msgstr ""
+
+#: .\monitoring\models.py:52
+msgid "Bajarilgan vaqt"
+msgstr "Время завершения"
+
+#: .\templates\components\navbar.html:9
+msgid "Home"
+msgstr "Главная"
+
+#: .\templates\components\navbar.html:14
+msgid "Subjects"
+msgstr "Предметы"
+
+#: .\templates\components\navbar.html:58
+msgid "Profile"
+msgstr "Профиль"
+
+#: .\templates\components\navbar.html:61
+msgid ""
+"Log\n"
+"                                    out"
+msgstr "Выйти"
+
+#: .\templates\components\navbar.html:64
+msgid ""
+"Sign\n"
+"                                    in"
+msgstr "Вход"
+
+#: .\templates\components\navbar.html:66
+msgid ""
+"Sign\n"
+"                                    up"
+msgstr "Регистрация"
+
+#: .\templates\pages\delete_profile.html:10
+msgid " - are you sure?"
+msgstr " - вы уверены?"
+
+#: .\templates\pages\delete_profile.html:13 .\templates\pages\profile.html:22
+msgid "Delete"
+msgstr "Удалить"
+
+#: .\templates\pages\edit_profile.html:13
+msgid "Save"
+msgstr "Сохранить"
+
+#: .\templates\pages\exercise_page.html:43
+msgid "Tekshirish"
+msgstr "Проверить"
+
+#: .\templates\pages\exercise_page.html:46
+msgid "Register to take the test"
+msgstr "Зарегистрируйтесь, чтобы пройти тест"
+
+#: .\templates\pages\home_page.html:11
+msgid "Hi"
+msgstr "Привет"
+# msgstr "Здарова, заебал"
+
+#: .\templates\pages\profile.html:18
+msgid "Rezultatlar"
+msgstr "Результаты"
+
+#: .\templates\pages\profile.html:21
+msgid "Edit"
+msgstr "Изменить"
+
+#: .\templates\pages\result_page.html:11
+msgid "Natijangiz"
+msgstr "Ваш результат"
+
+#: .\templates\pages\subjects_page.html:11
+msgid "FANLAR"
+msgstr "ПРЕДМЕТЫ"
+
+#: .\templates\pages\variant_page.html:11
+msgid "VARIANTLAR"
+msgstr "ВАРИАНТЫ"
+
+#: .\user\forms.py:24
+msgid "Bunday foydalanuvchi nomiga ega foydalanuvchi allaqachon mavjud."
+msgstr "Пользователь с таким именем пользователя уже существует."

@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-13 19:32+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\config\settings.py:126
+msgid "English"
+msgstr ""
+
+#: .\config\settings.py:127
+msgid "Русский"
+msgstr ""
+
+#: .\config\settings.py:128
+msgid "O'zbekcha"
+msgstr ""
+
+#: .\monitoring\models.py:52
+msgid "Bajarilgan vaqt"
+msgstr ""
+
+#: .\templates\components\navbar.html:9
+msgid "Home"
+msgstr "Bosh sahifa"
+
+#: .\templates\components\navbar.html:14
+msgid "Subjects"
+msgstr "Fanlar"
+
+#: .\templates\components\navbar.html:58
+msgid "Profile"
+msgstr "Profil"
+
+#: .\templates\components\navbar.html:61
+msgid ""
+"Log\n"
+"                                    out"
+msgstr "Chiqish"
+
+#: .\templates\components\navbar.html:64
+msgid ""
+"Sign\n"
+"                                    in"
+msgstr "Kirish"
+
+#: .\templates\components\navbar.html:66
+msgid ""
+"Sign\n"
+"                                    up"
+msgstr "Ro'yxatdan o'tish"
+
+#: .\templates\pages\delete_profile.html:10
+msgid " - are you sure?"
+msgstr " - ishonchingiz komilmi?"
+
+#: .\templates\pages\delete_profile.html:13 .\templates\pages\profile.html:22
+msgid "Delete"
+msgstr "O'chirish"
+
+#: .\templates\pages\edit_profile.html:13
+msgid "Save"
+msgstr "Saqlash"
+
+#: .\templates\pages\exercise_page.html:43
+msgid "Tekshirish"
+msgstr ""
+
+#: .\templates\pages\exercise_page.html:46
+msgid "Register to take the test"
+msgstr "Sinovda qatnashish uchun ro'yxatdan o'ting"
+
+#: .\templates\pages\home_page.html:11
+msgid "Hi"
+msgstr "Salom"
+
+#: .\templates\pages\profile.html:18
+msgid "Rezultatlar"
+msgstr ""
+
+#: .\templates\pages\profile.html:21
+msgid "Edit"
+msgstr "O'zgartirish"
+
+#: .\templates\pages\result_page.html:11
+msgid "Natijangiz"
+msgstr ""
+
+#: .\templates\pages\subjects_page.html:11
+msgid "FANLAR"
+msgstr ""
+
+#: .\templates\pages\variant_page.html:11
+msgid "VARIANTLAR"
+msgstr ""
+
+#: .\user\forms.py:24
+msgid "Bunday foydalanuvchi nomiga ega foydalanuvchi allaqachon mavjud."
+msgstr ""
