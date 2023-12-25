@@ -4,10 +4,11 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "*"
+django = "===4.2.8"
 pillow = "*"
 django-modeltranslation = "*"
 django-widget-tweaks = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 
